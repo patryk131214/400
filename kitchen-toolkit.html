@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Toolkit | Felmusgano Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        main {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Felmusgano</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="category-recipe-adaptation-ideas.html" class="nav-link"
+                            style="color: var(--color-accent);">Recipe Adaptation</a></li>
+                    <li><a href="kitchen-toolkit.html" class="nav-link">Toolkit</a></li>
+                    <li><a href="business-innovation-hall.html" class="nav-link">Innovation Hall</a></li>
+                    <li><a href="get-reliable-help.html" class="btn"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container section">
+
+        <div class="tool-header">
+            <h1 style="color:white; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Interactive Kitchen Toolkit</h1>
+            <p style="color: #eee; font-size: 1.2rem; margin-top: 1rem;">Precision tools for the modern culinary
+                adaptation.</p>
+        </div>
+
+        <div class="toolkit-grid">
+
+            <!-- Tool 1: Smart Recipe Scaler -->
+            <div class="glass-panel">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Smart Recipe Scaler</h2>
+
+                <div class="range-wrap">
+                    <label>Original Servings: <span id="orig-val">4</span></label>
+                    <input type="range" class="range" min="1" max="20" value="4" id="orig-servings">
+                </div>
+
+                <div class="range-wrap">
+                    <label>Desired Servings: <span id="new-val">6</span></label>
+                    <input type="range" class="range" min="1" max="20" value="6" id="new-servings">
+                </div>
+
+                <div class="conversion-result">
+                    Multiplier: <span id="multiplier">1.50</span>x
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h4 style="border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; margin-bottom: 1rem;">Example
+                        Adaptation</h4>
+                    <ul class="ingredient-list">
+                        <li><span>All-Purpose Flour</span> <span class="ingredient-amount" data-base="250">375</span>g
+                        </li>
+                        <li><span>Granulated Sugar</span> <span class="ingredient-amount" data-base="100">150</span>g
+                        </li>
+                        <li><span>Butter (Unsalted)</span> <span class="ingredient-amount" data-base="115">172.5</span>g
+                        </li>
+                        <li><span>Large Eggs</span> <span class="ingredient-amount" data-base="2">3</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tool 2: Quick Unit Converter -->
+            <div class="glass-panel">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Quick Converter</h2>
+
+                <div class="switch-container">
+                    <button class="switch-btn active" id="btn-cups">Cups to Grams</button>
+                    <button class="switch-btn" id="btn-oz">Oz to Grams</button>
+                </div>
+
+                <div class="form-group">
+                    <label id="input-label" style="text-align: center; display: block; font-size: 1.2rem;">Enter
+                        Cups</label>
+                    <input type="number" id="convert-input" class="form-control" value="1"
+                        style="font-size: 1.5rem; text-align: center;">
+                </div>
+
+                <div class="conversion-result">
+                    = <span id="convert-result">125</span>g <span
+                        style="font-size: 1rem; display: block; margin-top: 0.5rem; color: #666;">(of Flour)</span>
+                </div>
+
+                <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #555;">
+                    *Note: "Cup" weights vary by ingredient. This tool uses a standard flour weight (125g/cup) and sugar
+                    weight (200g/cup) average for demonstration.
+                </p>
+
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="category-recipe-adaptation-ideas.html" class="btn">Explore Adaptation Ideas &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="glass-panel" style="text-align: center;">
+            <h2>Need Custom Advice?</h2>
+            <p style="margin-bottom: 1.5rem;">Our chefs in the Business Innovation Hall can help scale your restaurant
+                menu.</p>
+            <a href="business-innovation-hall.html" class="btn">Visit Innovation Hall</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: rgba(17,17,17,0.95); margin-top: 0;">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="footer-col-title">Felmusgano</span>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem; opacity: 0.9;">Precision. Passion. Palate.</p>
+                </div>
+                <div>
+                    <span class="footer-col-title">Tools</span>
+                    <ul>
+                        <li><a href="kitchen-toolkit.html">Recipe Scaler</a></li>
+                        <li><a href="kitchen-toolkit.html">Unit Converter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-col-title">Learn</span>
+                    <ul>
+                        <li><a href="category-recipe-adaptation-ideas.html">Adaptation Ideas</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2024 Felmusgano. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // --- Scaler Logic ---
+        const origSlider = document.getElementById('orig-servings');
+        const newSlider = document.getElementById('new-servings');
+        const origDisplay = document.getElementById('orig-val');
+        const newDisplay = document.getElementById('new-val');
+        const multiplierDisplay = document.getElementById('multiplier');
+        const ingredients = document.querySelectorAll('.ingredient-amount');
+
+        function updateScaler() {
+            const orig = parseInt(origSlider.value);
+            const desired = parseInt(newSlider.value);
+
+            origDisplay.innerText = orig;
+            newDisplay.innerText = desired;
+
+            const multiplier = desired / orig;
+            multiplierDisplay.innerText = multiplier.toFixed(2);
+
+            ingredients.forEach(ing => {
+                const base = parseFloat(ing.dataset.base);
+                const newVal = base * multiplier;
+                // Round to reasonable decimals
+                ing.innerText = Number.isInteger(newVal) ? newVal : newVal.toFixed(1);
+            });
+        }
+
+        origSlider.addEventListener('input', updateScaler);
+        newSlider.addEventListener('input', updateScaler);
+
+        // --- Converter Logic ---
+        const btnCups = document.getElementById('btn-cups');
+        const btnOz = document.getElementById('btn-oz');
+        const inputLabel = document.getElementById('input-label');
+        const convertInput = document.getElementById('convert-input');
+        const convertResult = document.getElementById('convert-result');
+        let mode = 'cups'; // 'cups' or 'oz'
+
+        function updateConverter() {
+            const val = parseFloat(convertInput.value);
+            if (isNaN(val)) {
+                convertResult.innerText = "---";
+                return;
+            }
+
+            if (mode === 'cups') {
+                // 1 cup flour ~ 125g
+                convertResult.innerText = (val * 125).toFixed(0);
+            } else {
+                // 1 oz ~ 28.35g
+                convertResult.innerText = (val * 28.35).toFixed(1);
+            }
+        }
+
+        btnCups.addEventListener('click', () => {
+            mode = 'cups';
+            btnCups.classList.add('active');
+            btnOz.classList.remove('active');
+            inputLabel.innerText = "Enter Cups";
+            updateConverter();
+        });
+
+        btnOz.addEventListener('click', () => {
+            mode = 'oz';
+            btnOz.classList.add('active');
+            btnCups.classList.remove('active');
+            inputLabel.innerText = "Enter Ounces";
+            updateConverter();
+        });
+
+        convertInput.addEventListener('input', updateConverter);
+
+    </script>
+</body>
+
+</html>
